@@ -1,4 +1,8 @@
-background = 
-main_color = 
+[color]
+background = #424242
+main_color = #1E1E1E
+font_color = #FFFFFB
+
+[font]
 font_type = 
 font_size = 
