@@ -1,0 +1,4 @@
+background = 
+main_color = 
+font_type = 
+font_size = 
