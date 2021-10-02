@@ -20,8 +20,8 @@ parser.read('config.txt')
 saved_sheet_color = parser.get('color','main_color')
 saved_bg_color = parser.get('color', 'background')
 saved_font_color =parser.get('color','font_color' )
-
-
+saved_font_size = parser.get('font', 'font_size')
+saved_font_type = parser.get('font','font_type')
 #END SETTINGS ======================================================================================================================================
 
 def fullscreen():
@@ -57,8 +57,8 @@ root.attributes('-fullscreen',True)
 frame_page = Frame(root,bg = saved_sheet_color,width=800,height=1040, borderwidth=0,highlightthickness=0)
 frame_page.place(x=560,y=20)
 
-text_area = Text(root,bg = saved_sheet_color,fg=saved_font_color,width=75,height=62,  borderwidth=0,highlightthickness=0)
-text_area.place(x=660,y=60)
+text_area = Text(frame_page,bg = saved_bg_color,fg=saved_font_color,width=60,height=60,  borderwidth=0,highlightthickness=0, font = (saved_font_type,saved_font_size))
+text_area.place(x=70,y=60)
 quit_button = Button(root,image=quit_bt, borderwidth=0,highlightthickness=0,bg=saved_bg_color,activebackground=saved_bg_color,command = lambda: root.destroy())
 quit_button.place(x=10,y=10)
 

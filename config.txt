@@ -4,5 +4,5 @@ main_color = #1E1E1E
 font_color = #FFFFFB
 
 [font]
-font_type = 
-font_size = 
+font_type = Open Sans
+font_size = 14
